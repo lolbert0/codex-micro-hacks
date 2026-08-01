@@ -1,0 +1,23 @@
+{
+  "name": "codex-micro-spotify-router",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A reversible Spotify-aware lighting router for Codex Micro",
+  "type": "commonjs",
+  "scripts": {
+    "build:app": "sh macos/build-app.sh",
+    "router:start": "sh scripts/start.sh",
+    "router:stop": "sh scripts/stop.sh",
+    "router:status": "sh scripts/status.sh",
+    "test": "node --test",
+    "simulate": "node src/cli.js simulate",
+    "observe": "node src/cli.js observe",
+    "control": "node src/cli.js control",
+    "status": "node src/cli.js status"
+  },
+  "dependencies": {
+    "esptool-js": "0.6.0",
+    "node-hid": "3.1.0",
+    "semver": "7.7.2"
+  }
+}
