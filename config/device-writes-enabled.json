@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "device": {
+    "type": "codex_micro",
+    "productId": 33632,
+    "pollIntervalMs": 100,
+    "writeIntervalMs": 120,
+    "lightingKeepaliveMs": 750,
+    "rpcTimeoutMs": 700,
+    "reconnectDelayMs": 250
+  },
+  "layers": {
+    "codex": 1,
+    "spotify": 2
+  },
+  "spotify": {
+    "pollIntervalMs": 300,
+    "queryTimeoutMs": 1500
+  },
+  "lighting": {
+    "spotify": {
+      "ambient": {
+        "effect": 4,
+        "brightness": 0.35,
+        "speed": 0.25,
+        "magic": 1,
+        "color": 1947988
+      },
+      "keys": {
+        "effect": 1,
+        "brightness": 0.6,
+        "speed": 0.5,
+        "magic": 1,
+        "color": 1947988
+      }
+    },
+    "off": {
+      "ambient": {
+        "effect": 0,
+        "brightness": 0,
+        "speed": 0,
+        "magic": 0,
+        "color": 0
+      },
+      "keys": {
+        "effect": 0,
+        "brightness": 0,
+        "speed": 0,
+        "magic": 0,
+        "color": 0
+      }
+    }
+  },
+  "safety": {
+    "deviceWritesEnabled": true,
+    "restoreCodexOnExit": true,
+    "maximumWritesPerSecond": 10
+  }
+}

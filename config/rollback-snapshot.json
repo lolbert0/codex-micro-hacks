@@ -1,0 +1,49 @@
+{
+  "capturedAt": "REPLACE_WITH_CAPTURE_TIMESTAMP",
+  "source": "Sanitized example; replace with a local pre-install baseline",
+  "sourceSha256": "REPLACE_WITH_LOCAL_BASELINE_SHA256",
+  "device": {
+    "name": "Codex Micro",
+    "firmwareVersion": "0.4.1",
+    "inputVersion": "0.17.3",
+    "productId": 33632,
+    "serialNumber": "REDACTED"
+  },
+  "profile": {
+    "id": 0,
+    "name": "Default",
+    "layers": [
+      {
+        "id": 0,
+        "name": "Layer 1",
+        "role": "Codex",
+        "lighting": "Owned by the Codex desktop app"
+      },
+      {
+        "id": 1,
+        "name": "Spotify",
+        "role": "Spotify",
+        "backlight": {
+          "effect": "solid",
+          "brightness": 0.6,
+          "speed": 0.5,
+          "magic": 1,
+          "color": 1947988
+        },
+        "underglow": {
+          "effect": "breath",
+          "brightness": 0.35,
+          "speed": 0.25,
+          "magic": 1,
+          "color": 1947988
+        }
+      }
+    ]
+  },
+  "rollback": [
+    "Stop the router process.",
+    "The router sends no off or reset command on exit.",
+    "Switch to Layer 1; the Codex desktop app resumes its normal lighting writes.",
+    "If needed, reopen Work Louder Input and re-save the unchanged Default profile."
+  ]
+}
